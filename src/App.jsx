@@ -1,4 +1,7 @@
 import './App.css'
+import Card from './components/card/Card'
+import Navbar from './components/navbar/Navbar'
+
 
 function App() {
 
@@ -10,11 +13,9 @@ function App() {
 
   return (
     <>
-      <div className="card">
-        <img src={cardInfo.img} alt="" />
-        <h4>{cardInfo.firstName}</h4>
-        <h5>{cardInfo.lastName}</h5>
-      </div>
+      <Navbar/>
+      <Card info={cardInfo}/>
+
     </>
   )
 }
